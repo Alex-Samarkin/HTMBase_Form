@@ -18,10 +18,17 @@
       <h1 class="display-3">Регистрация пациента</h1>
       <p class="lead">Введите необходимые данные</p>
       <hr class="my-2">
-      <p>More info</p>
+      <p>Быстрые ссылки и поиск</p>
       <p class="lead">
         <a class="btn btn-primary btn-sm" href="На главную страницу Промед" role="button">На главную страницу Промед</a>
-      </p>
+        <a class="btn btn-primary btn-sm" href="#" role="button">На страницу ЛПУ</a>
+        <a class="btn btn-primary btn-sm" href="#" role="button">На страницу регистратуры</a </p>
+
+        <form name="GoogleSearch" action="http://google.com/search" target="_blank" method="GET">
+          <input name="q">
+          <input type="submit" value="Запрос на сайт Google">
+        </form>
+
     </div>
   </header>
   <div class="container-fluid">
@@ -39,15 +46,8 @@
         </div>
 
         <div class="col-8">
-          <form name="Google" action="http://google.com?q=" method="get">
-            <fieldset>
-              <legend>личные данные</legend>
-              <label>Имя
-                <input type="text" required>
-              </label>
-            </fieldset>
-            <input class="btn btn-primary" type="submit" value="Отправить">
-          </form>
+        <!-- Форма ввода данных о пациенте -!>
+
         </div>
       </div>
       <!-- Optional JavaScript -->

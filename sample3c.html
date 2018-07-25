@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Регистрация пациента</title>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1 class="display-3">Регистрация пациента</h1>
+            <p class="lead">Введите необходимые данные</p>
+            <hr class="my-2">
+            <p>Быстрые ссылки и поиск</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-sm" href="На главную страницу Промед" role="button">На главную страницу Промед</a>
+                <a class="btn btn-primary btn-sm" href="#" role="button">На страницу ЛПУ</a>
+                <a class="btn btn-primary btn-sm" href="#" role="button">На страницу регистратуры</a </p>
+
+                <form name="GoogleSearch" action="http://google.com/search" target="_blank" method="GET">
+                    <input name="q">
+                    <input type="submit" value="Запрос на сайт Google">
+                </form>
+
+
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-info">
+                <h3>Справка</h3>
+            </div>
+            <div class="col-9 bg-info">
+                <h3>Форма ввода</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 bg-info">
+                <p>введите необходимые сведения и нажмите кнопку "Отправить"</p>
+            </div>
+
+            <div class="col-9">
+                <!-- Форма ввода данных о пациенте -->
+                <form action="#" method="post" name="patient">
+                    <fieldset form="patient" class="form-control">
+                        <legend class="form-control ">Фамилия, имя, отчество</legend>
+                        <div class="form-group ">
+                            <label for="F ">Фамилия</label>
+                            <input id="F " class="form-control " type="text " value="Фамилия ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="I ">Имя</label>
+                            <input id="I " class="form-control " type="text " value="Имя ">
+                        </div>
+                        <div class="form-group ">
+                            <label for="O ">Отчество</label>
+                            <input id="O " class="form-control " type="text " value="Отчество ">
+                        </div>
+                    </fieldset>
+
+                    <fieldset form="pathient" class="form-control">
+                        <legend class="form-control">
+                            Паспортные данные
+                        </legend>
+                        <div class="form-group">
+                            <label for="Birth-date">Дата рождения</label>
+                            <input id="Birth-date" class="form-control" type="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="Passport-1">Паспорт (серия и номер):</label>
+                            <input id="Passport-1" class="form-control" type="text" pattern="[0-9]{4}" value="0000">
+                            <input id="Passport-2" class="form-control" type="text" pattern="[0-9]{6}" value="000000">
+                        </div>
+
+
+                    </fieldset>
+                    <button class="btn btn-primary" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.js "></script>
+        <script src="js/popper.js "></script>
+        <script src="js/bootstrap.js "></script>
+</body>
+
+</html>
